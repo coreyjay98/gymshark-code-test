@@ -1,0 +1,7 @@
+.filterTab {
+  background-color: white;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 10%;
+}

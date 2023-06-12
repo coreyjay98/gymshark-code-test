@@ -1,0 +1,109 @@
+.product {
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  flex: 2 1 21%;
+  position: relative;
+  justify-content: center;
+  @media (max-width: 480px) {
+    flex: auto;
+  }
+  @media (max-width: 803px) {
+    flex: 50%;
+  }
+
+  & p {
+    padding: 0;
+    margin: 0.5rem;
+  }
+}
+
+.image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.productDescription {
+  display: flex;
+  justify-content: space-between;
+}
+
+.productPrice {
+  font-weight: bold;
+}
+
+.productText {
+  & p:nth-child(1) {
+    font-weight: 500;
+  }
+  & p:nth-child(2) {
+    color: rgb(67, 70, 74);
+  }
+}
+
+.labelDisplay {
+  position: absolute;
+  display: flex;
+  top: 1rem;
+  color: grey;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.productOverlay {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  left: 10%;
+  bottom: 1rem;
+  background-color: rgba(249, 249, 249, 255);
+  border-radius: 1rem;
+  & p {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+}
+
+.productSizes {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.size {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 5%;
+  margin-right: 5%;
+  margin-left: 5%;
+  padding: 0.75rem;
+  height: 25%;
+  width: 10%;
+  cursor: pointer;
+}
+
+.active {
+  cursor: pointer;
+  &:hover {
+    box-shadow: 1px 1px 1px lightgray;
+  }
+}
+
+.notActive {
+  background-color: lightgray !important;
+  cursor: default;
+}
+
+.imageCover {
+  display: flex;
+  height: fit-content;
+  position: relative;
+}
